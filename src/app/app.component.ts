@@ -1,11 +1,15 @@
-import { Component, VERSION } from "@angular/core";
+import { Component, VERSION, OnInit } from "@angular/core";
+import { DataService } from "data.service";
 
 @Component({
   selector: "my-app",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"]
 })
-export class AppComponent {
+export class appComponent implements OnInit{
+ngOnInit(): void {
+throw new Error("Method not implemented.");
+}
   name = "Angular " + VERSION.major;
 
   toDoArray: Array<string> = [];
